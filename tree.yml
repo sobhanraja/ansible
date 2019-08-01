@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: installing tree software on node
+    apt:
+      name: tree
+      state: present
+      
